@@ -12,8 +12,8 @@
     "vue3-sass-importer-sass-lib": "file:../sass-lib-v2"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.0",
-    "@babel/preset-env": "^7.22.0",
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.4",
     "@vue/test-utils": "^2.0.0-rc.10",
     "@vue/vue3-jest": "^30.0.0",
     "babel-jest": "30.x",
