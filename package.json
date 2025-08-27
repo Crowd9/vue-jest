@@ -2,20 +2,17 @@
   "name": "vue-jest-monorepo",
   "private": true,
   "engines": {
-    "node": ">=10",
+    "node": ">=18",
     "yarn": "^1.17.3"
   },
   "workspaces": {
     "packages": [
       "packages/*",
-      "e2e/2.x/*",
-      "e2e/2.x/**/entry",
       "e2e/3.x/*",
       "e2e/3.x/**/entry"
     ],
     "nohoist": [
-      "**/vue",
-      "**/vue2-sass-importer-sass-lib"
+      "**/vue"
     ]
   },
   "scripts": {
