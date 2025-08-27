@@ -8,18 +8,13 @@ Since we need to support a variety of Vue and Jest versions, vue-jest doesn't fo
 
 | Vue version | Jest Version      | npm Package         | Branch |
 | ----------- | ----------------- | ------------------- | ------ |
-| Vue 2       | Jest 26 and below | `vue-jest@4`        |        |
 | Vue 3       | Jest 26 and below | `vue-jest@5`        |        |
-| Vue 2       | Jest 27 and above | `@vue/vue2-jest@27` | 27.x   |
 | Vue 3       | Jest 27 and above | `@vue/vue3-jest@27` | 27.x   |
-| Vue 2       | Jest 28 and above | `@vue/vue2-jest@28` | 28.x   |
 | Vue 3       | Jest 28 and above | `@vue/vue3-jest@28` | 28.x   |
+| Vue 3       | Jest 29 and above | `@vue/vue3-jest@29` | 29.x   |
+| Vue 3       | Jest 30 and above | `@vue/vue3-jest@30` | 30.x   |
 
 ```bash
-# Vue 2
-npm install --save-dev @vue/vue2-jest@28 # (use the appropriate version)
-yarn add @vue/vue2-jest@28 --dev
-
 # Vue 3
 npm install --save-dev @vue/vue3-jest@28 # (use the appropriate version)
 yarn add @vue/vue3-jest@28 --dev
@@ -33,7 +28,7 @@ To use `vue-jest` as a transformer for your `.vue` files, map them to the approp
 {
   "jest": {
     "transform": {
-      "^.+\\.vue$": "@vue/vue2-jest" // Update to match your installed version
+      "^.+\\.vue$": "@vue/vue3-jest" // Update to match your installed version
     }
   }
 }
@@ -47,7 +42,7 @@ A full config will look like this.
     "moduleFileExtensions": ["js", "json", "vue"],
     "transform": {
       "^.+\\.js$": "babel-jest",
-      "^.+\\.vue$": "@vue/vue2-jest"
+      "^.+\\.vue$": "@vue/vue3-jest"
     }
   }
 }
@@ -115,7 +110,7 @@ A `package.json` Example
     "moduleFileExtensions": ["js", "json", "vue"],
     "transform": {
       "^.+\\.js$": "babel-jest",
-      "^.+\\.vue$": "@vue/vue2-jest"
+      "^.+\\.vue$": "@vue/vue3-jest"
     },
     "globals": {
       "vue-jest": {
